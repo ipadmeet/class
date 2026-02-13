@@ -103,7 +103,7 @@ button { cursor: pointer; padding: 6px 10px; border-radius: 6px; border: 1px sol
 <body>
 
 <header>
-  <h1>2月13日（金）</h1>
+  <h1>2月2日（月）</h1>
   <div id="status" style="margin-left:auto"></div>
 </header>
 
@@ -115,10 +115,10 @@ button { cursor: pointer; padding: 6px 10px; border-radius: 6px; border: 1px sol
 
 <!-- --- スケジュール --- -->
 <div class="date-buttons">
- <button class="date-button fancy-btn fancy-blue" onclick="showSchedule('today')">1日目</button>
-  <button class="date-button fancy-btn fancy-blue" onclick="showSchedule('tomorrow')">2日目</button>
-  <button class="date-button fancy-btn fancy-blue" onclick="showSchedule('following')">3日目</button>
-  <button class="date-button fancy-btn fancy-blue" onclick="showSchedule('notice')">4日目</button>
+ <button class="date-button fancy-btn fancy-blue" onclick="showSchedule('today')">本日</button>
+  <button class="date-button fancy-btn fancy-blue" onclick="showSchedule('tomorrow')">明日</button>
+  <button class="date-button fancy-btn fancy-blue" onclick="showSchedule('following')">明後日</button>
+  <button class="date-button fancy-btn fancy-blue" onclick="showSchedule('notice')">諸連絡</button>
 
  
 
@@ -138,6 +138,11 @@ button { cursor: pointer; padding: 6px 10px; border-radius: 6px; border: 1px sol
   <iframe src="https://ipadmeet.github.io/hikariplay/" allowfullscreen style="width:100%;height:300px;border:none;border-radius:6px;"></iframe>
 </div>
 
+
+
+
+
+  
 
 <!-- ギャラリー -->
 <section>
@@ -176,12 +181,12 @@ button { cursor: pointer; padding: 6px 10px; border-radius: 6px; border: 1px sol
 <script>
 // ===== おみくじ・スケジュール =====
 const scheduleData = {
-  'today': { date: '1日目', content: '<div>1限：保健</div><div>2限：公共</div><div>3限：数学ⅡB</div>' },
+  'today': { date: '本日', content: '<div>4限：論表</div>' },
 
- 'tomorrow': { date: '2日目', content: '<div>1限：聖書</div><div>2限：家庭基礎</div><div>3限：古典探究</div>'  },
-  'following': { date: '3日目', content: '<div>1限：物理/生物</div><div>2限：化学</div><div>3限：論理・表現Ⅱ</div>' },
+ 'tomorrow': { date: '明日', content: '<div>2限：公共</div><div>7限：化学</div><div>7限：探究</div>'  },
+  'following': { date: '明後日', content: <div>3限：化学</div><div>4限：聖書</div><div>6限：LHR</div><div>7限：探究</div>' },
  
-  'notice': { date: '4日目', content: '<div>1限：英語CⅡ</div><div>2限：論理国語</div><div>3限：地理探究</div>' }
+  'notice': { date: '諸連絡', content: '<div>名仏を彫るにはやや鈍き刀を用うべし</div>' }
 
 };
 
