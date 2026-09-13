@@ -83,7 +83,7 @@
 <body>
 
 <header>
-  <h1>9月8日（火）</h1>
+  <h1>9月14日（月）</h1>
   <div id="status" style="margin-left:auto"></div>
 </header>
 
@@ -95,10 +95,10 @@
 
 <!-- --- スケジュール --- -->
 <div class="date-buttons">
- <button class="date-button fancy-btn fancy-blue" onclick="showSchedule('today')">1日目</button>
-  <button class="date-button fancy-btn fancy-blue" onclick="showSchedule('tomorrow')">2日目</button>
-  <button class="date-button fancy-btn fancy-blue" onclick="showSchedule('following')">3日目</button>
-  <button class="date-button fancy-btn fancy-blue" onclick="showSchedule('notice')">4日目</button>
+ <button class="date-button fancy-btn fancy-blue" onclick="showSchedule('today')">本日</button>
+  <button class="date-button fancy-btn fancy-blue" onclick="showSchedule('tomorrow')">明日</button>
+  <button class="date-button fancy-btn fancy-blue" onclick="showSchedule('following')">明後日</button>
+  <button class="date-button fancy-btn fancy-blue" onclick="showSchedule('notice')">諸連絡</button>
 
  
 
@@ -123,11 +123,11 @@
 <script>
 // ===== おみくじ・スケジュール =====
 const scheduleData = {
-  'today': { date: '1日目', content: '<div>1限：古典探究</div><div>2限：倫理</div>' },
- 'tomorrow': { date: '2日目', content: '<div>1限：論理国語</div><div>2限：世界史・日本史</div>'  },
-  'following': { date: '3日目', content: '<div>1限：英CⅢ</div><div>2限：数学</div><div>3限：授業評価</div><div>4限：共テ説明会</div>' },
+  'today': { date: '本日', content: '<div>1限：英CⅢ</div>' },
+ 'tomorrow': { date: '明日', content: '<div>授業変更なし</div>'  },
+  'following': { date: '明後日', content: '<div>進研共テ模試</div><div>09時05分～10時05分：地歴</div><div>10時15分～11時15分：公民</div><div>11時30分～13時00分：国語</div><div>13時40分～14時10分：英Listening</div><div>14時25分～15時45分：英Reading</div>' },
  
-  'notice': { date: '4日目', content: '<div>1限：地学基礎</div><div>2限：論理・表現Ⅲ</div><div>3限：政治経済</div>' }
+  'notice': { date: '諸連絡', content: '<div>9月19日（土）は自宅学習日</div><div>9月20日（日）～9月23日（水）は休業日</div>' }
 
 };
 
@@ -136,7 +136,7 @@ const omikujiResults = [
   {name:'凶',text:'水鉄砲で撃たれる'},
   {name:'吉',text:'常北ファームで愛のささやき'},
   {name:'小吉',text:'脳筋大爆発！'},
-  {name:'中吉',text:'浜田の壁ドン'},
+  {name:'中吉',text:'宇佐美の壁ドン'},
   {name:'大吉',text:'正義の味方になれる'}
 ];
 
